@@ -13,6 +13,7 @@ import Playlist from "./services/Playlist";
 import PlaylistController from "./controllers/playlist.controller";
 import PlayerController from "./controllers/player.controller";
 
+// TODO: change Location to Playlist service!!!
 const onVideoClick = () => {
     document.querySelectorAll('.video__item').forEach(video => {
         video.addEventListener('click', () => {
