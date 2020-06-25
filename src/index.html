@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1713/PNG/512/iconfinder-videoeditorfilmsproduction-3993846_112661.png" type="image/png">
+    <title></title>
+</head>
+
+<body>
+<header class="header">
+    <div class="header__wrapper container">
+        <div class="header__headline">
+            <img src="https://cdn.icon-icons.com/icons2/1713/PNG/512/iconfinder-videoeditorfilmsproduction-3993846_112661.png" alt="video icon">
+            <h2 class="heading heading-3">Video Project</h2>
+        </div>
+        <div class="header__logout">
+            <a class="heading heading-4" href="https://google.com">
+            <img src="https://www.jing.fm/clipimg/full/291-2913239_transparent-background-logout-icon-png.png" alt="logout">
+            <span>Logout</span>
+        </a></div>
+    </div>
+</header>
+<main>
+    <div class="body__wrapper">
+        <section class="body__video">
+            <div class="video__wrapper">
+                <div class="video__actions">
+                    <button id="originalMode" class="btn">Original Mode</button>
+                    <button id="shuffleMode" class="btn">Shuffle Mode</button>
+                    <button id="crazyMode" class="btn">Crazy Mode</button>
+                </div>
+                <video id="player" autoplay width="640" height="360">
+                </video>
+                <div class="video__actions">
+                    <p id="videoCurrentTime" class="para para-2">00:00:00</p>
+                    <button id="previousVideo" class="btn">Previous</button>
+                    <button id="videoMode" class="btn" data-mode="play">Pause</button>
+                    <button id="nextVideo" class="btn" >Next</button>
+                </div>
+            </div>
+            <div class="video__content">
+                <h1 id="videoTitle" class="heading heading-2"></h1>
+                <p id="videoDescription" class="para para-2"></p>
+            </div>
+        </section>
+        <aside class="body__list">
+            <div id="videoList" class="video__list"></div>
+        </aside>
+    </div>
+</main>
+<footer class="footer">
+    <div class="footer__wrapper container">
+        <div class="footer__hack">
+            <p class="para para-2">Hack with</p>
+            <img src="https://images.vexels.com/media/users/3/144097/isolated/preview/3dedcd235214cdde6b4e171fdbf66c9d-heart-icon-by-vexels.png" alt="heart">
+            <p class="para para-2">by Oz Izhak</p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.btn {
+    & {cursor: pointer;display: block;border: none;font-size: $font-size-xs;font-family: inherit;background-color: $color-primary-1;color: $color-primary-4;width: 120px; height: 35px; border-radius: 10px; transition: all .2s; user-select: none;}
+    &:hover {background-color: $color-hover-mode-1;}
+    &:focus {outline: none;}
+    &:disabled {background-color: $color-disabled;}
+
+    &__highlight-color-1 {
+        & {background-color: $color-secondary-2;}
+        &:hover {background-color: $color-hover-mode-2;}
+    }
+}

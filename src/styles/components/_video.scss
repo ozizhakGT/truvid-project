@@ -1,0 +1,27 @@
+.video {
+  &__content {width: 650px; height: auto; max-height: 150px ;margin: 10px 0; overflow-y: scroll}
+  &__list {height: 80%;  overflow-y: scroll;}
+  &__item {
+    & {width: 200px; position: relative; margin: 0 auto 30px auto; transition: all .2s ease-in-out; cursor: pointer;border-radius: 10px; overflow: hidden; opacity: 0; animation: fadeIn .2s .1s forwards ease-in-out}
+    &:hover {width: 250px;}
+    &:hover .play-icon {display: block}
+    &--preview {width: 100%}
+    & > .play-icon {display: none;width: 40px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0; animation: showPlayIcon .6s forwards ease-in}
+  }
+  &__actions {display: flex; height: 140px; align-items: center; justify-content: space-around}
+
+  &__highlight {border: 2px $color-secondary-3 solid; width: 250px;}
+
+  &__wrapper > video {border-radius: 10px;}
+}
+
+@keyframes showPlayIcon {
+  0% {opacity: 0; transform: translate(-50%, -50%) rotate(0) scale(0);}
+  60% {opacity: 1; transform: translate(-50%, -50%) rotate(180deg) scale(1);}
+  100% {opacity: 1; transform: translate(-50%, -50%) rotate(480deg);}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}

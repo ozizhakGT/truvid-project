@@ -1,0 +1,18 @@
+.body {
+  &__wrapper {height: 90%; display: flex; justify-content: center; align-items: center}
+
+  &__video {flex: .8; display: flex; justify-content: center; flex-direction: column; align-items: center; margin: 50px 0}
+  &__list  {
+    & {flex: .2; height: 100%; background-color: $color-primary-6;box-shadow: -15px 0 20px  rgba(0,0,0, .2);
+      display: flex; justify-content: center; align-items: center;}
+  }
+
+}
+
+@media only screen and (max-height: 815px) {
+  .body {
+    &__wrapper {height: auto}
+    &__video {margin: 0}
+    &__list {padding: 20px 0}
+  }
+}
